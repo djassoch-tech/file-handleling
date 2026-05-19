@@ -1,5 +1,24 @@
-file = open("codingal.txt","r")
+from tkinter import *
+window = Tk()
+window.title("tkinter sample window")
+window.geometry("300x300")
 
-print(file.read())
 
-file.close()
+greeting = Label(text="hello User", fg="black",bg="white")
+button =  Button(text="click me",bg="black",fg="white")
+entry = Entry (fg="yellow",bg="blue",width=50)
+greeting.pack()
+button.pack()
+entry.pack()
+
+
+frame= Frame(master=window,relief=RAISED,borderwidth=5)
+frame.pack()
+label=Label(master=frame,text="sample frame")
+label.pack()
+
+
+textbox=Text(fg="green",bg="blue")
+textbox.pack()
+
+textbox.mainloop()
